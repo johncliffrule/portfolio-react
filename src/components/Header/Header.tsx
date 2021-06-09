@@ -1,12 +1,25 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import './Header.scss';
 
 const Header = () => {
     return (
-        <div>
-            <Button variant="contained" color="primary">
-                Hello World
-            </Button>
+        <div className="header-container">
+            <Container maxWidth="xl">
+                <AppBar position="static">
+                    <Toolbar>
+                        <Typography variant="h6" >
+                            News
+                        </Typography>
+                        <div color="inherit">Login</div>
+                    </Toolbar>
+                </AppBar>
+            </Container>
         </div>
     )
 }
