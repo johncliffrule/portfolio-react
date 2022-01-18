@@ -1,6 +1,5 @@
 import React from 'react';
 import ParentComponent from './components/index';
-import logo from './logo.svg';
 import './App.scss';
 
 function App() {
